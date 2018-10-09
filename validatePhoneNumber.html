@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function validatePhoneNumber(str) {
+        regexp = /^([0-9]{2})([-0][0-9]{9})$/;
+        if (regexp.test(str)){
+            console.log("correct");
+        }else{
+            console.log("incorrect");
+        }
+    }
+    validatePhoneNumber((84)+('-'+0978489648));
+    validatePhoneNumber(('a'+8)+'-'+(22222222));
+</script>
+</body>
+</html>
